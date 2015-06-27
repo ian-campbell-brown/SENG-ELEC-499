@@ -91,7 +91,7 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="fftwlib">
- <HintPath>C:/Users/Jason/Documents/Unity/SEESSignallingSoftware/Assets/Binaural Audio/Plugins/fftwlib.dll</HintPath>
+ <HintPath>C:/Users/Jason/Documents/Unity/test/SENG-ELEC-499/Unity/SEESSignallingSoftware/Assets/Binaural Audio/Plugins/fftwlib.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

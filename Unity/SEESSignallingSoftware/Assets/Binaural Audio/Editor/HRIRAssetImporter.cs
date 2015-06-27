@@ -15,7 +15,7 @@ public class HRIRAssetImporter : AssetPostprocessor
         {
             string hrirPath = Path.ChangeExtension(path, ".asset");
             HRIRAsset old = AssetDatabase.LoadAssetAtPath(hrirPath, typeof(HRIRAsset)) as HRIRAsset;
-            HRIRAsset hrir = HRIRAssetFromFile(path);
+            HRIRAsset hrir = TryFromFile(path);
 
             if (old != null && hrir != null)
                 old.UpdateAssetData(hrir);

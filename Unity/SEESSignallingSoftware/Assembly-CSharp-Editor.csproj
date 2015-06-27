@@ -65,7 +65,7 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="fftwlib">
- <HintPath>C:/Users/Jason/Documents/Unity/SEESSignallingSoftware/Assets/Binaural Audio/Plugins/fftwlib.dll</HintPath>
+ <HintPath>C:/Users/Jason/Documents/Unity/test/SENG-ELEC-499/Unity/SEESSignallingSoftware/Assets/Binaural Audio/Plugins/fftwlib.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
