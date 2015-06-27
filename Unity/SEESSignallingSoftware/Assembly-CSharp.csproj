@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{0623ED8C-54D9-D6BD-B018-9EFD9533F469}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_2;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_32;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Binaural Audio\AttenuationFilter.cs" />
+     <Compile Include="Assets\Binaural Audio\BinauralAudioFilter.cs" />
+     <Compile Include="Assets\Binaural Audio\BinauralAudioListener.cs" />
+     <Compile Include="Assets\Binaural Audio\Legacy\LegacyBinauralAudioFilter.cs" />
+     <Compile Include="Assets\Binaural Audio\Sources\CComplex.cs" />
+     <Compile Include="Assets\Binaural Audio\Sources\HRIRAsset.cs" />
+     <Compile Include="Assets\Binaural Audio\Sources\PCMQueue.cs" />
+     <Compile Include="Assets\Binaural Audio\Sources\PComplex.cs" />
+     <Compile Include="Assets\Binaural Audio\TestHRTF.cs" />
+     <Compile Include="Assets\KinectSDK\Script\Kinect\KinectImgControllers\DisplayColor.cs" />
+     <Compile Include="Assets\KinectSDK\Script\Kinect\KinectImgControllers\DisplayDepth.cs" />
+     <Compile Include="Assets\KinectSDK\Script\Kinect\KinectModelControllers\KinectModelControllerV2.cs" />
+     <Compile Include="Assets\KinectSDK\Script\Kinect\KinectModelControllers\KinectPointController.cs" />
+     <Compile Include="Assets\KinectSDK\Script\Kinect\KinectWrapper\DepthWrapper.cs" />
+     <Compile Include="Assets\KinectSDK\Script\Kinect\KinectWrapper\DeviceOrEmulator.cs" />
+     <Compile Include="Assets\KinectSDK\Script\Kinect\KinectWrapper\KinectEmulator.cs" />
+     <Compile Include="Assets\KinectSDK\Script\Kinect\KinectWrapper\KinectInterop.cs" />
+     <Compile Include="Assets\KinectSDK\Script\Kinect\KinectWrapper\KinectRecorder.cs" />
+     <Compile Include="Assets\KinectSDK\Script\Kinect\KinectWrapper\KinectSensor.cs" />
+     <Compile Include="Assets\KinectSDK\Script\Kinect\KinectWrapper\SkeletonWrapper.cs" />
+     <Compile Include="Assets\MyAssets\Script\AssetScripts\SharedTexture2D.cs" />
+     <Compile Include="Assets\MyAssets\Script\ImageProcessor.cs" />
+     <Compile Include="Assets\MyAssets\Script\PointCloudVisualizer.cs" />
+     <Compile Include="Assets\MyAssets\Script\RaySignaller.cs" />
+     <Compile Include="Assets\MyAssets\Script\SignallingVolume.cs" />
+     <Compile Include="Assets\MyAssets\Script\Utilities\EnablePointSize.cs" />
+     <Compile Include="Assets\MyAssets\Script\Utilities\ImageBinding.cs" />
+     <Compile Include="Assets\MyAssets\Script\Utilities\InlineAudioLoop.cs" />
+     <Compile Include="Assets\MyAssets\Script\Utilities\KinectSingleton.cs" />
+     <Compile Include="Assets\MyAssets\Script\VolumeDetector.cs" />
+     <Compile Include="Assets\MyAssets\Script\VolumeSignalObject.cs" />
+     <Compile Include="Assets\MyAssets\Utils\ScriptableObjectUtils.cs" />
+     <Compile Include="Assets\MyAssets\Utils\TransformUtils.cs" />
+     <Compile Include="Assets\OculusAudioSDK\OSP\Scripts\OSPAudioSource.cs" />
+     <Compile Include="Assets\OculusAudioSDK\OSP\Scripts\OSPManager.cs" />
+     <Compile Include="Assets\OculusAudioSDK\OSPTestScene\Scripts\Pulse.cs" />
+     <Compile Include="Assets\OculusAudioSDK\OSPTestScene\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <None Include="Assets\KinectSDK\Asset\Shaders\Normal-Diffuse.shader" />
+     <None Include="Assets\MyAssets\Shader\UI-Default Shared.shader" />
+     <None Include="Assets\MyAssets\Shader\DepthCloud.shader" />
+     <None Include="Assets\Binaural Audio\Readme.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="fftwlib">
+ <HintPath>C:/Users/Jason/Documents/Unity/SEESSignallingSoftware/Assets/Binaural Audio/Plugins/fftwlib.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
