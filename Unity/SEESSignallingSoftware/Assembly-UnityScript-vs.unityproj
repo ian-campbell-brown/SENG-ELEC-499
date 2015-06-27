@@ -51,10 +51,13 @@
      <Compile Include="Assets\OculusAudioSDK\OSPTestScene\Standard Assets\Character Controllers\Sources\Scripts\PlatformInputController.js" />
      <Compile Include="Assets\OculusAudioSDK\OSPTestScene\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" />
      <Compile Include="Assets\OculusAudioSDK\OSPTestScene\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" />
+     <None Include="Assets\Plugins\Android\assets\donotdelete.txt" />
+     <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
      <None Include="Assets\KinectSDK\Asset\Shaders\Normal-Diffuse.shader" />
      <None Include="Assets\MyAssets\Shader\UI-Default Shared.shader" />
      <None Include="Assets\MyAssets\Shader\DepthCloud.shader" />
      <None Include="Assets\Binaural Audio\Readme.txt" />
+     <None Include="Assets\Plugins\x86\donotdelete.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
