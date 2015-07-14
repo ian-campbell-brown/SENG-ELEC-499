@@ -1,0 +1,1 @@
+place this folders contents in your uvic web hostings www folder to access as a webpage
