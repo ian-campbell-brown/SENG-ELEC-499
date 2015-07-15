@@ -13,8 +13,8 @@ public class KinectSensor : MonoBehaviour, KinectInterface {
     {
         get
         {
-            if (instance == null)
-                throw new Exception("There needs to be an active instance of the KinectSensor component.");
+            //if (instance == null)
+            //    throw new Exception("There needs to be an active instance of the KinectSensor component.");
             return instance;
         }
         private set

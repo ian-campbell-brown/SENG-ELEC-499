@@ -16,6 +16,7 @@ public class KinectSingleton : MonoBehaviour
         {
             Debug.LogWarning("Two instances of signleton exist in this scene.", this);
             Destroy(this.gameObject);
+            return;
         }
 
         Instance = this;

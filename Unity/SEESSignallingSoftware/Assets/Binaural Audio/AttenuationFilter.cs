@@ -5,30 +5,31 @@ public class AttenuationFilter : MonoBehaviour
     public float m_minDistance = 0;
     public float m_maxDistance = 100;
     public float m_scale = 100;
+    public float m_attack = 0.001f;
     public AttenuationType m_attenuationType = AttenuationType.Logarithmic;
 
+    private float m_setGain = 0;
     private float m_gain = 0;
 
-    void Update()
+    void FixedUpdate()
     {
         AudioListener listener = GameObject.FindObjectOfType<AudioListener>();
         if (listener == null)
         {
-            m_gain = 1;
+            m_setGain = 1;
             return;
         }
-
 
         float distance = Vector3.Distance(transform.position, listener.transform.position);
         float factor = Mathf.Clamp((distance - m_minDistance) / (m_maxDistance - m_minDistance), 0, 1);
 
         switch (m_attenuationType)
         {
-            case AttenuationType.Linear:        m_gain = ComputeLinear(factor); break;
-            case AttenuationType.Logarithmic:   m_gain = ComputeLogarithmic(factor); break;
-            case AttenuationType.LogReverse:    m_gain = ComputeLogReverse(factor); break;
-            case AttenuationType.Inverse:       m_gain = ComputeInverse(factor); break;
-            default:                            m_gain = 1; break;
+            case AttenuationType.Linear:        m_setGain = ComputeLinear(factor); break;
+            case AttenuationType.Logarithmic:   m_setGain = ComputeLogarithmic(factor); break;
+            case AttenuationType.LogReverse:    m_setGain = ComputeLogReverse(factor); break;
+            case AttenuationType.Inverse:       m_setGain = ComputeInverse(factor); break;
+            default:                            m_setGain = 1; break;
         }
     }
 
@@ -61,7 +62,14 @@ public class AttenuationFilter : MonoBehaviour
     void OnAudioFilterRead(float[] data, int channels)
     {
         for (int i = 0; i < data.Length; i++)
+        {
+            if (i % channels == 0)
+            {
+                m_gain = Mathf.Lerp(m_gain, m_setGain, m_attack);
+            }
+
             data[i] *= m_gain;
+        }
     }
 
     public enum AttenuationType
